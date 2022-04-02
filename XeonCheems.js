@@ -1512,16 +1512,7 @@ case 'antilink':
         }
         break
 
-      case "emoji": case "e": {
-        if (!q) return fakegroup("the emoji?");
-        qes = args.join(" ");
-        emoji.get(`${qes}`).then((emoji) => {
-          teks = `${emoji.images[4].url}`;
-          sendStickerFromUrl(from, `${teks}`);
-          console.log(teks);
-        });
-	      }
-        break
+
 
 	    case 'play': case 'ytplay': {
                 if (!text) throw `Example : ${prefix + command} bts boy with luv`
