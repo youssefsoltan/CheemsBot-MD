@@ -4,7 +4,7 @@
 //or put my channel link in the description.
 //~you can recode or copy the codes but give
 //credit.
-//~Thank you to LORD BUDDHA, ME AND MY 
+//~Thank you to LORD JAGANNATH, ME AND MY 
 //FAMILY.
 
 //[modules]\\
@@ -1511,6 +1511,17 @@ case 'antilink':
         })
         }
         break
+
+      case "emoji": case "e":
+        if (!q) return fakegroup("the emoji?");
+        qes = args.join(" ");
+        emoji.get(`${qes}`).then((emoji) => {
+          teks = `${emoji.images[4].url}`;
+          sendStickerFromUrl(from, `${teks}`);
+          console.log(teks);
+        });
+        break
+
 	    case 'play': case 'ytplay': {
                 if (!text) throw `Example : ${prefix + command} bts boy with luv`
                 let yts = require("yt-search")
@@ -3264,8 +3275,8 @@ break
 break
 case 'tqtt': 
 reply(`Thanks to
-LORD BUDDHA
-Xeon (Me)
+LORD JAGANNATH
+Arctix (Me)
 My family
 And all friends who helped assemble this sexy script !!!`)
 break
