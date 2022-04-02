@@ -1512,7 +1512,7 @@ case 'antilink':
         }
         break
 
-      case "emoji": case "e":
+      case "emoji": case "e": {
         if (!q) return fakegroup("the emoji?");
         qes = args.join(" ");
         emoji.get(`${qes}`).then((emoji) => {
@@ -1520,6 +1520,7 @@ case 'antilink':
           sendStickerFromUrl(from, `${teks}`);
           console.log(teks);
         });
+	      }
         break
 
 	    case 'play': case 'ytplay': {
