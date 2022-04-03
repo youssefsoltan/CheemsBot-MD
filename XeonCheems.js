@@ -589,8 +589,8 @@ Please @${m.mentionedJid[0].split`@`[0]} to type accept/reject`
             }
             }
             break
-	    case '': case '': case '': case '': case '': case '': {
-                XeonBotInc.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/6ba2aed566865a068e91f.jpg' }, caption: `*Hi bro ${m.pushName}*\n\n Bot Rental Price\n⭔ 250INR Per Group via Gpay/paytm/phonepe 1 Month\n\nFor more details, you can chat with the owner\nhttps://wa.me/16149454333 (Owner)\n\nDonate Me : \n\n⭔ Fampay : https://telegra.ph/file/6ba2aed566865a068e91f.jpg\n⭔ Paytm : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg` }, { quoted: m })
+	    case 'rent': {
+                XeonBotInc.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/c777c97b7b0e87ab8a62f.jpg' }, caption: `*Hi bro ${m.pushName}*\n\n Bot Rental Price\n⭔ 250INR Per Group via Gpay/paytm/phonepe 1 Month\n\nFor more details, you can chat with the owner\nhttps://wa.me/16149454333 (Owner)\n\nDonate Me : \n\n⭔ Fampay : https://telegra.ph/file/c777c97b7b0e87ab8a62f.jpg\n⭔ Paytm : https://telegra.ph/file/c777c97b7b0e87ab8a62f.jpg` }, { quoted: m })
             }
             break
             case 'sc': case 'script': {
@@ -1511,8 +1511,6 @@ case 'antilink':
         })
         }
         break
-
-
 
 	    case 'play': case 'ytplay': {
                 if (!text) throw `Example : ${prefix + command} bts boy with luv`
