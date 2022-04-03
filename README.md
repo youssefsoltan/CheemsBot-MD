@@ -53,7 +53,7 @@ Scan qr code from the above button, u can pay through GooglePay, Paytm, PhonePe 
 
 ## `SETTINGS`
 
-- CHANGE OWNER NUMBER [Here](https://github.com/Sibuuu07/CheemsBot-MD/master/config/config.json#L25)
+- CHANGE OWNER NUMBER [Here](https://github.com/Sibuuu07/CheemsBot-MD/blob/master/config/config.json#L25)
 - CHANGE OWNER NAME [Here](https://github.com/Sibuuu07/CheemsBot-MD/blob/master/config/config.json#L30)
 - CHANGE BOT NAME [Here](https://github.com/Sibuuu07/CheemsBot-MD/blob/master/config/config.json#L29)
 
