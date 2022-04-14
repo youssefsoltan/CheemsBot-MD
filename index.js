@@ -42,7 +42,7 @@ async function startXeonBotInc() {
     if (json.content[0].tag == 'offer') {
     let pa7rick = await XeonBotInc.sendContact(callerId, global.owner)
     XeonBotInc.sendMessage(callerId, { text: `Automatic block system!\nDon't call bot!\nPlease contact the owner to open !`}, { quoted : pa7rick })
-    XeonBotInc.sendMessage(`916909137213@s.whatsapp.net`, {text: `*Report Bot:* Someone Called Bot`})
+    XeonBotInc.sendMessage(`201288455338@s.whatsapp.net`, {text: `*Report Bot:* Someone Called Bot`})
     await sleep(8000)
     await XeonBotInc.updateBlockStatus(callerId, "block")
     }
@@ -92,15 +92,15 @@ Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURICom
 
 Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/d460e086f9f9bf6b04e17.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
                 if (anu.action == 'add') {
-                    XeonBotInc.sendMessage(anu.id, { image: Kon, contextInfo: { mentionedJid: [num] }, caption: `Welcome To ${metadata.subject} @${num.split("@")[0]}
+                    XeonBotInc.sendMessage(anu.id, { image: Kon, contextInfo: { mentionedJid: [num] }, caption: `جروب في بك اهلا ${metadata.subject} @${num.split("@")[0]}
 
-Description: ${metadata.desc}
+الجروب😎👇 قواعد: ${metadata.desc}
 
-Welcome To Our Comfortable Happy😋, Sometimes Loud😜, Usually Messy🤥, Full Of Love🥰, HOME😌!!`} )
+الجروب❤️ في منور انت ياصديقي بك يا صديقي!!`} )
                 } else if (anu.action == 'remove') {
-                    XeonBotInc.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `@${num.split("@")[0]} Left ${metadata.subject}
+                    XeonBotInc.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `@${num.split("@")[0]} خرج لقد ${metadata.subject}
 
-I'm not sure if it was a goodbye charm, but it was fun while it lasted 😌✨` })
+وداع😢💔 مجددا تعود لن انك اتمني })
                 }
             }
         } catch (err) {
